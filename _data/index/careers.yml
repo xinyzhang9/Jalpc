@@ -1,29 +1,44 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Company A
+    detail: Daric.Inc
     i18n: company_a
   desc:
-    detail: I worked at Company A ...
+    detail: I worked as a full stack application developer to build business software to serve enterprise clients in asset management, financial, real estate and provide operating system for cloud-based risk analysis, decisioning, customer acquisition, and visualizations.
     i18n: company_a_desc
   date:
-    detail: Apr. 2016
+    detail: June. 2016
     i18n: company_a_date
   job:
-    detail: CTO
+    detail: Full Stack Developer
     i18n: company_a_job
   icon: fa-plus-square
 
 - name:
-    detail: Company B
+    detail: Taylor's Family Foundation
     i18n: company_b
   desc:
-    detail: I worked at Company B ...
+    detail: I collaborated with Scrum masters and a Scrum team to build an interactive iPad app for children to recognize plants in the garden. I am solely responsible for the backend development using Node.js and self-designed Non-SQL Database.
     i18n: company_b_desc
   date:
-    detail: Jun. 2015
+    detail: Feb. 2016
     i18n: company_b_date
   job:
-    detail: Full Stack Developer
+    detail: Backend Developer
     i18n: company_b_job
   icon: fa-plus-square
+
+- name:
+    detail: CodingDojo
+    i18n: company_c
+  desc:
+    detail: I am trained as a full stack developer and completed multiple projects in LAMP, MEAN and Ruby on Rails.
+    i18n: company_c_desc
+  date:
+    detail: Nov. 2015
+    i18n: company_c_date
+  job:
+    detail: Full Stack Developer Training
+    i18n: company_c_job
+  icon: fa-plus-square
+  
