@@ -55,7 +55,7 @@
   gh_user: xinyzhang9
   repo: Session_Timer
   img: /static/assets/img/landing/timer.png
-  desc: It is a RxJS application for automatically log off a user session. Any mouse movement during that period will resume to normal state.
+  desc: It is a RxJS application for automatically logging off a user session.
   
 - name: Alexa Projects
   i18n: Alexa Projects
