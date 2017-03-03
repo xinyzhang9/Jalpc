@@ -18,7 +18,7 @@ author:  # change following line to your infomation.
   email: xinyzhang9@gmail.com  # Leave blank if you don't have now
   facebook_username: adonis.s.zhang  # Leave blank if you don't have now
   github_username: xinyzhang9  # Leave blank if you don't have now
-  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+  avatar: /static/assets/img/landing/h2.jpeg  # upload your avatar at directory and edit it.
   skill_icon1:
     - name: icon-apache
     - name: fa-linux
