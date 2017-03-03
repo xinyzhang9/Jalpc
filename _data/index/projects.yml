@@ -12,7 +12,7 @@
   i18n: Clash Royale Deck Advisor
   gh_user: xinyzhang9
   repo: ClashRoyaleDeck
-  img: /static/assets/img/landing/cr.png
+  img: /static/assets/img/landing/clash.png
   desc: This is a single-page application using React+Redux+Webpack -- a deck advisor for Clash Royale players. User can build their own deck from the most updated cards. the advisor will show some useful statistics and suggestions on how to improve this deck.
 
 - name: Pokemon Fighting Game
