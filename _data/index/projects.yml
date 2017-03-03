@@ -6,18 +6,32 @@
   gh_user: xinyzhang9
   repo: movie_recommender
   img: /static/assets/img/landing/jekyll.png
-  desc: This is a movie recommender application based on ReactiveX concept. I create 3 streams to fetch movie data from API endpoints and each stream is considered as distinct. So the user can remove a single suggestion and it will be replaced by a new suggestion.
+  desc: This is a movie recommender application using RxJS. I create 3 streams to fetch movie data from API endpoints and each stream is considered as distinct. So the user can remove a single suggestion and it will be replaced by a new suggestion.
 
 - name: Clash Royale Deck Advisor
   i18n: Clash Royale Deck Advisor
   gh_user: xinyzhang9
   repo: ClashRoyaleDeck
   img: /static/assets/img/landing/leetcode.png
-  desc: This is a single-page application -- a deck advisor for Clash Royale players. User can build their own deck from the most updated cards. the advisor will show some useful statistics and suggestions on how to improve this deck.
+  desc: This is a single-page application using React+Redux+Webpack -- a deck advisor for Clash Royale players. User can build their own deck from the most updated cards. the advisor will show some useful statistics and suggestions on how to improve this deck.
 
 - name: Pokemon Fighting Game
   i18n: Pokemon Fighting Game
   gh_user: xinyzhang9
   repo: socket_io
   img: /static/assets/img/landing/familycode.png
-  desc: This is the round based fighting game realized via socket.io. User can have a pvp or pve battle via the pokemons. The game engine is the game theory of rock-scissor-paper. The pokemon can release supermoves if its moves are not overtaken by the opponents for certain rounds.
+  desc: This is the round based fighting game implemented by socket.io. User can have a PvP or PvE battle via the pokemons. The game engine is the game theory of rock-scissor-paper. The pokemon can release supermoves if its moves are not overtaken by the opponents for certain rounds.
+
+- name: JianQi 2D Game
+  i18n: JianQi 2D Game
+  gh_user: xinyzhang9
+  repo: JianQi_Game
+  img: /static/assets/img/landing/leetcode.png
+  desc: This is a 2D endless mode arcade game implemented by Laya Engine. You are a hero who keeps fighting various fo monsters. During game process, you can get items to power up your health and skills. To get higher score, you need to beat as many enemies as you could. But at first, make sure you can survive.
+
+- name: Friend Circles
+  i18n: Friend Circles
+  gh_user: xinyzhang9
+  repo: friend-circles
+  img: /static/assets/img/landing/leetcode.png
+  desc: This is a visualization of the real-time friend circles. This app is implemented in MEAN stack and deployed with NGINX.
