@@ -47,26 +47,26 @@
   i18n: Hover Zoom
   gh_user: xinyzhang9
   repo: rx_zoom
-  img: /static/assets/img/landing/sf.png
+  img: /static/assets/img/landing/zoom.png
   desc: This is a demo project to show how to hover and zoom images using RxJS.
   
 - name: Session Timer
   i18n: Session Timer
   gh_user: xinyzhang9
   repo: Session_Timer
-  img: /static/assets/img/landing/sf.png
+  img: /static/assets/img/landing/timer.png
   desc: It is a RxJS application for automatically log off a user session. Any mouse movement during that period will resume to normal state.
   
 - name: Alexa Projects
   i18n: Alexa Projects
   gh_user: xinyzhang9
   repo: alexa_projects
-  img: /static/assets/img/landing/sf.png
+  img: /static/assets/img/landing/alexa.png
   desc: This is a project collection for Amazon Alexa Service.
   
 - name: Builder Game
   i18n: Builder Game
   gh_user: xinyzhang9
   repo: builder_game
-  img: /static/assets/img/landing/sf.png
+  img: /static/assets/img/landing/builder.png
   desc: This is a 3D builder game using three.js.
