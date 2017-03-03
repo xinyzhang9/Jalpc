@@ -35,3 +35,10 @@
   repo: friend-circles
   img: /static/assets/img/landing/leetcode.png
   desc: This is a visualization of the real-time friend circles. This app is implemented in MEAN stack and deployed with NGINX.
+
+- name: Fighter Trainer
+  i18n: Fighter Trainer
+  gh_user: xinyzhang9
+  repo: fighter_trainer
+  img: /static/assets/img/landing/leetcode.png
+  desc: This is a similation of Macbook keyboard using RxJS and CSS3. It can be used as a trainer for street fighter players. 
