@@ -1,18 +1,18 @@
 # links section data
-- last_name: Name 1
-  first_name:
-  desc: CEO
-  website: https://www.google.com
-  email: ceo@google.com
+- last_name: Previous
+  first_name: Index
+  desc: Version 1.0
+  website: https://xinyzhang9.github.io/
+  email: xinyzhang9@gmail.com
+  
+- last_name: LinkedIn
+  first_name: Page
+  desc: Support LinkedIn Profile
+  website: https://www.linkedin.com/in/xinyang-zhang-55380330/
+  email: xinyzhang9@gmail.com
 
-- last_name: Donate
-  first_name: Jalpc
-  desc: Support Jalpc
-  website: http://www.jack003.com/donate/
-  email: me@jack003.com
-
-- last_name: LN
-  first_name: FN
+- last_name: Technical
+  first_name: Blog
   desc: COO
-  website: https://github.com
-  email: coo@google.com
+  website: http://dev.xinyangzhang.com/
+  email: xinyzhang9@gmail.com
