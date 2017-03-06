@@ -71,16 +71,4 @@
   img: /static/assets/img/landing/builder.png
   desc: This is a 3D builder game using three.js.
 
-- name: Secret Chatroom
-  i18n: Secret Chatroom
-  gh_user: xinyzhang9
-  repo: rxjs_chatroom
-  img: /static/assets/img/landing/chatroom.png
-  desc: This is a chatroom application implemented by Rxjs, Socket IO, ReactJS, Webpack and NodeJS.
-  
-- name: Particle Effect with finger
-  i18n: Particle Effect with finger
-  gh_user: xinyzhang9
-  repo: xinyzhang9.github.io/tree/master/dancing_ice
-  img: /static/assets/img/landing/finger.png
-  desc: This is a WebGL experiments for users to interact screen with fingers to generate fancy effects.
+
