@@ -9,6 +9,14 @@
 - name: Python
   href: /python/
   
+- name: Frontend
+  href: /frontend/
+
+- name: Backend
+  href: /backend/
+
+- name: Experiments
+  href: /experiments/
 - name: Life
   href: /life/
 
