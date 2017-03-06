@@ -81,6 +81,6 @@
 - name: Particle Effect with finger
   i18n: Particle Effect with finger
   gh_user: xinyzhang9
-  repo: rxjs_chatroom
+  repo: xinyzhang9.github.io/tree/master/dancing_ice
   img: /static/assets/img/landing/finger.png
   desc: This is a WebGL experiments for users to interact screen with fingers to generate fancy effects.
