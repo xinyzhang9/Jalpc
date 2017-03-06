@@ -26,8 +26,8 @@
   job:
     detail: Full Stack Developer
     i18n: company_b_job
-  icon: fa-plus-square
-
+  icon: fa-gamepad
+  
 - name:
     detail: CodingDojo
     i18n: company_c
