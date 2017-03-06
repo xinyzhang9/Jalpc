@@ -24,7 +24,7 @@
     detail: Feb. 2016
     i18n: company_b_date
   job:
-    detail: Backend Developer
+    detail: Full Stack Developer
     i18n: company_b_job
   icon: fa-plus-square
 
@@ -40,5 +40,47 @@
   job:
     detail: Full Stack Developer Training
     i18n: company_c_job
+  icon: fa-plus-square
+  
+- name:
+    detail: Cloud Particle
+    i18n: company_d
+  desc:
+    detail: Worked in the team of smart device group system design with data analysis and dynamic optimization.
+    i18n: company_d_desc
+  date:
+    detail: Mar. 2015
+    i18n: company_d_date
+  job:
+    detail: Hardware engineer intern
+    i18n: company_d_job
+  icon: fa-plus-square
+  
+- name:
+    detail: University of Michigan
+    i18n: company_e
+  desc:
+    detail: Graduated as a Master of Sience and Engineering in Electrical Engineering
+    i18n: company_e_desc
+  date:
+    detail: June. 2014
+    i18n: company_e_date
+  job:
+    detail: Master Degree
+    i18n: company_e_job
+  icon: fa-plus-square
+  
+- name:
+    detail: City University of HongKong
+    i18n: company_f
+  desc:
+    detail: Bachelor's degree in Electronic and Communication Engineering
+    i18n: company_f_desc
+  date:
+    detail: June. 2012
+    i18n: company_f_date
+  job:
+    detail: Bachelor Degree
+    i18n: company_f_job
   icon: fa-plus-square
   
