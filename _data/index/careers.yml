@@ -54,7 +54,7 @@
   job:
     detail: Hardware engineer intern
     i18n: company_d_job
-  icon: fa-plus-square
+  icon: fa-cloud
   
 - name:
     detail: University of Michigan
@@ -68,7 +68,7 @@
   job:
     detail: Master Degree
     i18n: company_e_job
-  icon: fa-plus-square
+  icon: fa-book
   
 - name:
     detail: City University of HongKong
@@ -82,5 +82,5 @@
   job:
     detail: Bachelor Degree
     i18n: company_f_job
-  icon: fa-plus-square
+  icon: fa-book
   
