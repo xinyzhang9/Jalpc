@@ -657,7 +657,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 }
 
 .top-navigation .navbar-brand {
-    background: #3385FF;
+    background: none;
     color: #fff;
     padding: 15px 25px
 }
