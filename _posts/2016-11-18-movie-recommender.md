@@ -19,12 +19,12 @@ Stream is an event time sequence. You can emit certain type of values, errors, a
 
 ## Project Objectives
 The objectives of this movie recommender is as follows.
-- [x] When user open the page, it renders 3 movie suggestions via calling from API endpoints.  
-- [x] When user click 'refresh' button, it re-render 3 new movie suggestions.  
-- [x] When user click 'x' button on one of the movie suggestion, it replaces with a new suggestion.  
-- [x] When user click movie title, a new tab of movie homepage will show up.  
-- [x] When user click 'add to cart' on one of the movie suggestions, the movie will be added to user's cart(collections) which is located on the right up corner of page.  
-- [x] User's cart is saved in local storage(offline) so user can still access that when revisiting page.
+* When user open the page, it renders 3 movie suggestions via calling from API endpoints.  
+* When user click 'refresh' button, it re-render 3 new movie suggestions.  
+* When user click 'x' button on one of the movie suggestion, it replaces with a new suggestion.  
+* When user click movie title, a new tab of movie homepage will show up.  
+* When user click 'add to cart' on one of the movie suggestions, the movie will be added to user's cart(collections) which is located on the right up corner of page.  
+* User's cart is saved in local storage(offline) so user can still access that when revisiting page.
 The screenshot is shown below.  
 ![alt](https://raw.githubusercontent.com/xinyzhang9/movie_recommender/master/movie2.png)
 
