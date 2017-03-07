@@ -29,7 +29,7 @@ The screenshot is shown below.
 ![alt](https://raw.githubusercontent.com/xinyzhang9/movie_recommender/master/movie2.png)
 
 ## Key steps
-1. Create observables from click event on the 3 close buttons and 1 refresh button.  
+Create observables from click event on the 3 close buttons and 1 refresh button.  
 ```
 var closeButton1 = document.querySelector('.close1');
 var closeButton2 = document.querySelector('.close2');
@@ -41,7 +41,8 @@ var close1ClickStream = Rx.Observable.fromEvent(closeButton1, 'click');
 var close2ClickStream = Rx.Observable.fromEvent(closeButton2, 'click');
 var close3ClickStream = Rx.Observable.fromEvent(closeButton3, 'click');
 ```
-2. Define request stream and respond stream.  When the page is loaded at the first time or user click refresh button, it will fire a request stream, which contains a API GET request. For the response stream, it maps each request stream to a promise object.  
+
+Define request stream and respond stream.  When the page is loaded at the first time or user click refresh button, it will fire a request stream, which contains a API GET request. For the response stream, it maps each request stream to a promise object.  
 ```
 var requestStream = refreshClickStream.startWith('startup click')
     .map(function(){
@@ -56,6 +57,7 @@ var responseStream = requestStream
         return Rx.Observable.fromPromise($.getJSON(requestUrl));
     });
 ```
+
 To understand how **flatMap** works, please see the following diagram.  
 ![alt](https://segmentfault.com/image?src=http://i.imgur.com/Hi3zNzJ.png&objectId=1190000004293922&token=e2d14a0bb39789fbea2aecf7abc4fcd0)  
 3. Create suggestion stream. The idea is we want to render 3 suggestion streams, which is a random chice from the returned movies list with length 20. We can combine the closeclick stream(user click 'x') with the latest response stream. So when user click 'x', that suggestion is replaced by another item from the latest returned movie list without calling API again. merge() is used to merge the multiple streams into one stream.  
@@ -75,7 +77,8 @@ function createSuggestionStream(closeClickStream) {
         .startWith(null);
 }
 ```
-4. Final step is to render the stream. It is basically mapping JSON key-values.  
+
+Final step is to render the stream. It is basically mapping JSON key-values.  
 ```
 // Rendering ---------------------------------------------------
 function renderSuggestion(suggestedMovie, selector) {
@@ -116,6 +119,7 @@ function renderSuggestion(suggestedMovie, selector) {
     }
 }
 ```
+
 There are some tricks in the rendering function. If the suggestion is empty, we want to hide it. Otherwise we set it as visible. And we want to add a event listener for each 'add to cart' button. We maintain a variable 'cart' to record user's collections. For each item, we push the movie id + movie image src to the cart. Make sure 'this' is used correctly.
 
 For the full source code, please visit my Github.
