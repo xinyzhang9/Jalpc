@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rxjs tutorial"
-date:   2017-01-31
+date:   2017-03-07
 desc: "this is a rxjs tutorial"
 keywords: "rxjs, javascript"
 categories: [Javascript]
