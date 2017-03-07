@@ -14,6 +14,4 @@ Recently I am very interested in Reactive Programming, so I did a mini project "
 ## Prior Knowledge
 What is ReactiveX?
 ReactiveX is a library for composing asynchronous and event-based programs by using observable sequence. The concept is shown in the following diagrams.  
-<center>
-![alt](https://segmentfault.com/image?src=http://i.imgur.com/cL4MOsS.png&objectId=1190000004293922&token=7a0e3538a8320e9e2ecdbc7cb8e8c096)
-</center>
+![alt](https://segmentfault.com/image?src=http://i.imgur.com/cL4MOsS.png&objectId=1190000004293922&token=7a0e3538a8320e9e2ecdbc7cb8e8c096){: .center-image }
