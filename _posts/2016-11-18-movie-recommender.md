@@ -60,7 +60,8 @@ var responseStream = requestStream
 
 To understand how **flatMap** works, please see the following diagram.  
 ![alt](https://segmentfault.com/image?src=http://i.imgur.com/Hi3zNzJ.png&objectId=1190000004293922&token=e2d14a0bb39789fbea2aecf7abc4fcd0)  
-3. Create suggestion stream. The idea is we want to render 3 suggestion streams, which is a random chice from the returned movies list with length 20. We can combine the closeclick stream(user click 'x') with the latest response stream. So when user click 'x', that suggestion is replaced by another item from the latest returned movie list without calling API again. merge() is used to merge the multiple streams into one stream.  
+
+Create suggestion stream. The idea is we want to render 3 suggestion streams, which is a random chice from the returned movies list with length 20. We can combine the closeclick stream(user click 'x') with the latest response stream. So when user click 'x', that suggestion is replaced by another item from the latest returned movie list without calling API again. merge() is used to merge the multiple streams into one stream.  
 ```
 function createSuggestionStream(closeClickStream) {
     return closeClickStream.startWith('startup click')
