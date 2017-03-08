@@ -123,7 +123,6 @@ function renderSuggestion(suggestedMovie, selector) {
 
 There are some tricks in the rendering function. If the suggestion is empty, we want to hide it. Otherwise we set it as visible. And we want to add a event listener for each 'add to cart' button. We maintain a variable 'cart' to record user's collections. For each item, we push the movie id + movie image src to the cart. Make sure 'this' is used correctly.
 
-For the full source code, please visit my Github.
-https://github.com/xinyzhang9/movie_recommender
+For the full source code, please visit my [Github Page](https://github.com/xinyzhang9/movie_recommender)  
 
 Thanks for reading.
