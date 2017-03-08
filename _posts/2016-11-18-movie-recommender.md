@@ -6,7 +6,7 @@ desc: "Movie recommender using Rxjs"
 keywords: "Rxjs, movie, tutorial"
 categories: [Javascript,Frontend]
 tags: [Rxjs,ReactiveX]
-icon: icon-html
+icon: icon-javascript
 ---
 ## Introduction
 Recently I am very interested in Reactive Programming, so I did a mini project "movie recommender" to generate a movie recommending list for users using ReactiveX asynchronous data streaming concept.
