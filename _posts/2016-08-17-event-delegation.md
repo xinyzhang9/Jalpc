@@ -8,8 +8,7 @@ categories: [Javascript,Frontend]
 tags: [Javascript]
 icon: icon-javascript
 ---
-Many developers may hear about event delegation but not familiar with that. I just wrote and tested some code to illustrate how it works.  
-Event delegation is to add a event listener to the parent instead of the individual node. In this way we can avoid redundant codes for similar listeners.  
+Many developers may hear about event delegation but not familiar with that. I just wrote and tested some code to illustrate how it works. Event delegation is to add a event listener to the parent instead of the individual node. In this way we can avoid redundant codes for similar listeners.  
 This is the sample code:  
 ```
 <head>
