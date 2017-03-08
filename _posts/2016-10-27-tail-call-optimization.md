@@ -21,11 +21,9 @@ factorial(5) // 120
 If the recursion is the last step of the function, it is called tail call. It only takes O(1) stack in memory, so it will not cause stack overflow. The factorial function can be rewritten like this:  
 ```
 function factorial(n,total=1){
- if(n <= 1) return total;
- return factorial(n-1,total * n);
+  if(n <= 1) return total;
+  return factorial(n-1,total * n);
 }
-
-
 factorial(5) // 120
 ```
 If a function is written in ES6 'use strict' format, it will be optimized automatically.
