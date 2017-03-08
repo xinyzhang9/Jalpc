@@ -9,7 +9,7 @@ tags: [Javascript]
 icon: icon-javascript
 ---
 Many developers may hear about event delegation but not familiar with that. I just wrote and tested some code to illustrate how it works. Event delegation is to add a event listener to the parent instead of the individual node. In this way we can avoid redundant codes for similar listeners.  
-This is the sample code:  
+### Example 1   
 ```
 <head>
  <title>delegation</title>
@@ -35,7 +35,7 @@ This is the sample code:
 The test result is as shown below.  
 ![alt](https://2.bp.blogspot.com/-VxwcUJwn6A0/V7TGOvjWXNI/AAAAAAAAIbM/bRnWWKZlFjAT21E657w2avBJeZHVfY0KwCLcB/s320/Screen%2BShot%2B2016-08-17%2Bat%2B1.14.30%2BPM.png)  
 
-A more advanced example:  
+### Example 2
 ```
 <div id = "div2">  
   <p>Test delegation matching.</p>
