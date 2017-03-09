@@ -8,7 +8,7 @@ categories: [Javascript,Backend]
 tags: [FullStack,Deployment,Cloud]
 icon: icon-javascript
 ---
-## Deploy
+## Deployment
 I created a droplet on digital ocean to serve this project. The parameter of the server is:  
 
 * 512 MB Memory,
@@ -94,3 +94,57 @@ sudo ln -s /etc/nginx/sites-available/{{pname}} /etc/nginx/sites-enabled/{{pname
 cd /etc/nginx/sites-enabled/ 
 sudo rm default
 ```
+
+### Project Dependencies and PM2
+* Install pm2 globally [pm2.5](https://www.npmjs.com/package/pm2.5) or [pm2](https://www.npmjs.com/package/pm2). This is a production process manager that allows us to run node processes in the background.
+```
+sudo npm install pm2 -g
+```
+* Try some stuff with pm2!
+```
+pm2 start server.js
+pm2 stop 0
+pm2 restart 0
+sudo service nginx reload && sudo service nginx restart
+```
+* You might have some components that you still need to install: (get your dependencies from npm (assuming your git project has a package.json))
+```
+npm install
+```
+* IF USING BOWER (assuming you have a bower.json)
+```
+sudo npm install bower -g
+sudo bower install --allow-root
+```
+### MongoDB
+* Set up a key
+```
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+```
+* setup mongodb in a source list
+```
+echo "deb http://repo.mongodb.org/apt/ubuntu precise/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+```
+* re-update to integrate Mongod
+```
+sudo apt-get update
+```
+* install mongo
+```
+sudo apt-get install -y mongodb-org
+```
+* Start mongo (probably already started)
+```
+sudo service mongod start
+```
+* Restart your pm2 project and make sure the nginx config’s are working:
+```
+pm2 stop 0
+pm2 restart 0
+sudo service nginx reload && sudo service nginx restart
+
+```
+At this point, all the works are done. The project is on live.
+
+### References
+Notes from AWS Deployment, CodingDojo
