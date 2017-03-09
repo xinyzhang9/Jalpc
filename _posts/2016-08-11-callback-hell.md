@@ -8,3 +8,144 @@ categories: [Javascript,Backend]
 tags: [Rxjs,NodeJS]
 icon: icon-javascript
 ---
+Continued my study on NodeJS. I recall that in my previous project, I often write too many callback chains to make the asynchronized APIs work. It's like the hell of callbacks.  
+For example, I have 4 asynchronized APIs and each API may depends on the previous result. The code will be:  
+```
+obj.api1(function(value1){
+  obj.api2(value1,function(value2){
+    obj.api3(value2,function(value3){
+      obj.api4(value3,function(value4){
+        callback(value4)
+      })
+    })
+  })
+})
+```
+If we want to remove the nested callbacks, the code can be extended as this:  
+```
+var handler1 = function(value1){ 
+  obj.api2(value1,handler2)
+}
+var handler2 = function(value2){
+  obj.api3(value2,handler3)
+}
+var handler3 = function(value3){
+  obj.api4(value3,handler4)
+}
+var handler4 = function(value4){
+  callback(value4)
+}
+
+
+obj.api1(handler1)
+```
+If written in event-driven style, the code will become as this:  
+```
+//use events
+var emitter = new event.Emitter();
+emitter.on("step1",function(){
+  obj.api1(function(value1){
+    emitter.emit("step2",value1)
+  })
+})
+emitter.on("step2",function(value1){
+  obj.api2(value1,function(value2){
+    emitter.emit("step3",value2)
+  })
+})
+emitter.on("step3",function(value2){
+  obj.api3(value2,function(value3){
+    emitter.emit("step4",value3)
+  })
+})
+emitter.on("step4",function(value3){
+  obj.api4(value3,function(value4){
+    callback(value4)
+  })
+})
+emitter.emit("step1")
+```
+However, Promise gives the nicest solution with very clean code:  
+```
+//promise
+promise()
+  .then(obj.api1)
+  .then(obj.api2)
+  .then(obj.api3)
+  .then(obj.api4)
+  .then(function(value4){
+    //do something with value4
+  },function(error){  
+    //handle any error from step1 to step4
+  })
+  .done()
+```
+We need to reconstruct the code for Promise to support chain call.  
+```
+//modify code to support chain property
+var Deferred = function(){
+  this.promise = new Promise();
+}
+//resolve
+Deferred.prototype.resolve = function(obj){
+  var promise = this.promise;
+  var handler;
+  while((handler = promise.queue.shift())){
+    if(handler && handler.fulfilled){
+      var ret = handler.fulfilled(obj);
+      if(ret && ret.isPromise){
+        ret.queue = promise.queue;
+        this.promise = ret;
+        return;
+      }
+    }
+  }
+}
+//fail
+Deferred.prototype.reject = function(err){
+  var promise = this.promise;
+  var handler;
+  while((handler = promise.queue.shift())){
+    if(handler && handler.error){
+      var ret = handler.error(err);
+      if(ret && ret.isPromise){
+        ret.queue = promise.queue;
+        this.promise = ret;
+        return;
+      }
+    }
+  }
+}
+//generate callback
+Deferred.prototype.callback = function(){
+  var that = this;
+  return function(err,file){
+    if(err){
+      return that,reject(err);
+    }
+    that.resolve(file);
+  }
+}
+var Promise = function(){
+  //the queue for callbacks waiting to be executed
+  this.queue = []
+  this.isPromise = true;
+}
+Promise.prototype.then = function(fufillerHandler,errorHandler,progressHandler){
+  var handler = {}
+  if(typeof fufilledHandler === 'function'){
+    handler.fufilled = fufilledHandler;
+  }
+  if(typeof errorHandler === 'function'){
+    handler.error = errorHandler;
+  }
+  this.queue.push(handler);
+  return this;
+}
+```
+The chain call in Promise is done by the following two steps:  
+* Save all the callbacks to the queue
+* Upon promise is finished, execute the callbacks one by one. When a new Promise object is detected, pause execution, change the current Deferred Object's promise reference to the new Promise object. Then parse it to the remaining callbacks.
+### Reference: 
+[<<Understand NodeJS>> by Eric Liu](https://promisesaplus.com/)
+
