@@ -146,6 +146,7 @@ Promise.prototype.then = function(fufillerHandler,errorHandler,progressHandler){
 The chain call in Promise is done by the following two steps:  
 * Save all the callbacks to the queue
 * Upon promise is finished, execute the callbacks one by one. When a new Promise object is detected, pause execution, change the current Deferred Object's promise reference to the new Promise object. Then parse it to the remaining callbacks.  
+
 ### Reference: 
-[<<Understand NodeJS>> by Eric Liu](https://promisesaplus.com/)
+[Understand NodeJS](https://promisesaplus.com/)
 
