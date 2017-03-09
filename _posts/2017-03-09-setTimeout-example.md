@@ -55,3 +55,15 @@ write a html file like this
 The first line is the result of onkeydown event without using setTimeout. You can see the result is missing the last input from the user, since the execution order is onkeydown -> onkeypress -> onkeyup  
 
 The second line is the result using setTimeout. It updates the value before extracting it to the right span. The execution order is onkeydown -> onkeypress -> function -> onkeyup  
+
+## extra args
+```
+setTimeout(function(x,y){
+  console.log(x+y);
+},0,1,2)
+// 3
+```
+0 => millseconds  
+1 => x  
+2 => y  
+so it will print 3 after '0' ms.
