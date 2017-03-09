@@ -142,9 +142,9 @@ sudo service mongod start
 pm2 stop 0
 pm2 restart 0
 sudo service nginx reload && sudo service nginx restart
-
 ```
-At this point, all the works are done. The project is on live.
+
+At this point, all the works are done. The project is on live.  
 
 ## References
 Notes from AWS Deployment, CodingDojo
