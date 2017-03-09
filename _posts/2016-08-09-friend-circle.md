@@ -54,9 +54,41 @@ cd /var/www
 sudo git clone {{your project file path on github/bitbucket}}
 ```
 
-*** Set up Nginx
+## Set up Nginx
 
 * Go to nginx’s sites-available directory:
 ```
 cd /etc/nginx/sites-available
+```
+* Enter vim: 
+```
+sudo vim {{pname}}
+```
+* Paste and modify the following code into vim after hitting i:
+```
+server {
+    listen 80;
+    location / {
+        proxy_pass http://{{PRIVATE-IP}}:8000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+```
+This code says: have the reverse proxy server (nginx) listen at port 80. When going to root /, listen for http requests as though you were actually http:// your private ip and the port your server is listening e.g @8000 or @6789 etc.  
+
+* Remove the defaults from /etc/nginx/sites-available  
+```
+sudo rm default
+```
+* Create a symbolic link from sites-enabled to sites available:
+```
+sudo ln -s /etc/nginx/sites-available/{{pname}} /etc/nginx/sites-enabled/{{pname}}
+```
+* Remove the defaults from cd /etc/nginx/sites-enabled/ 
+```
+sudo rm default
 ```
