@@ -82,13 +82,15 @@ This code says: have the reverse proxy server (nginx) listen at port 80. When go
 
 * Remove the defaults from /etc/nginx/sites-available  
 ```
+cd /etc/nginx/sites-available  
 sudo rm default
 ```
-* Create a symbolic link from sites-enabled to sites available:
+* Create a symbolic link from sites-enabled to sites available
 ```
 sudo ln -s /etc/nginx/sites-available/{{pname}} /etc/nginx/sites-enabled/{{pname}}
 ```
-* Remove the defaults from cd /etc/nginx/sites-enabled/ 
+* Remove the defaults from /etc/nginx/sites-enabled/
 ```
+cd /etc/nginx/sites-enabled/ 
 sudo rm default
 ```
