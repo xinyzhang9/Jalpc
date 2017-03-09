@@ -62,7 +62,7 @@
   gh_user: xinyzhang9
   repo: alexa_projects
   img: /static/assets/img/landing/alexa.png
-  desc: This is a project collection for Amazon Alexa Service.
+  desc: This is a project collection for Amazon Alexa applications.
   
 - name: Builder Game
   i18n: Builder Game
