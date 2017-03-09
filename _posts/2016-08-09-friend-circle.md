@@ -116,6 +116,7 @@ npm install
 sudo npm install bower -g
 sudo bower install --allow-root
 ```
+
 ## MongoDB
 * Set up a key
 ```
