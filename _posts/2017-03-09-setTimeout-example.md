@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Use setTimeout to reorder function call"
+title:  "The tricks of setTimeout"
 date:   2017-03-09
-desc: "Use setTimeout to reorder function call"
+desc: "The tricks of setTimeout"
 keywords: "JavaScript, setTimeout"
 categories: [Javascript]
 tags: [JavaScript,setTimeout]
