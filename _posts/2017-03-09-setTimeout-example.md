@@ -50,7 +50,8 @@ write a html file like this
 </body>
 </html>
 ```
-![alt](https://github.com/xinyzhang9/frontend_must_knows/blob/master/setTimeOut/setTimeout.png?raw=true)
+![alt](https://github.com/xinyzhang9/frontend_must_knows/blob/master/setTimeOut/setTimeout.png?raw=true)  
+
 The first line is the result of onkeydown event without using setTimeout. You can see the result is missing the last input from the user, since the execution order is onkeydown -> onkeypress -> onkeyup  
 
 The second line is the result using setTimeout. It updates the value before extracting it to the right span. The execution order is onkeydown -> onkeypress -> function -> onkeyup  
