@@ -8,7 +8,7 @@ categories: [Javascript,Backend]
 tags: [FullStack,Deployment,Cloud]
 icon: icon-javascript
 ---
-## Deployment
+# Deployment
 I created a droplet on digital ocean to serve this project. The parameter of the server is:  
 
 * 512 MB Memory,
@@ -17,7 +17,7 @@ I created a droplet on digital ocean to serve this project. The parameter of the
 
 I will list some memos for the deployment process for future reference.  
 
-### Set up Linux Server
+## Set up Linux Server
 * ssh root@{ip} In the ubuntu terminal: These establish some basic dependencies for deployment and the Linux server.  
 * update packages  
 ```
@@ -95,7 +95,7 @@ cd /etc/nginx/sites-enabled/
 sudo rm default
 ```
 
-### Project Dependencies and PM2
+## Project Dependencies and PM2
 * Install pm2 globally [pm2.5](https://www.npmjs.com/package/pm2.5) or [pm2](https://www.npmjs.com/package/pm2). This is a production process manager that allows us to run node processes in the background.
 ```
 sudo npm install pm2 -g
@@ -116,7 +116,7 @@ npm install
 sudo npm install bower -g
 sudo bower install --allow-root
 ```
-### MongoDB
+## MongoDB
 * Set up a key
 ```
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
@@ -146,5 +146,5 @@ sudo service nginx reload && sudo service nginx restart
 ```
 At this point, all the works are done. The project is on live.
 
-### References
+## References
 Notes from AWS Deployment, CodingDojo
