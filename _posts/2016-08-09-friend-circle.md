@@ -137,7 +137,7 @@ sudo apt-get install -y mongodb-org
 ```
 sudo service mongod start
 ```
-* Restart your pm2 project and make sure the nginx config’s are working:
+* Restart your pm2 project and make sure the nginx config’s are working:  
 ```
 pm2 stop 0
 pm2 restart 0
