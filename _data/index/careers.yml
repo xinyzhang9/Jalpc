@@ -12,8 +12,8 @@
   job:
     detail: Full Stack Developer
     i18n: company_a_job
-  icon: fa-plus-square
-
+  icon: fa-bar-chart
+  
 - name:
     detail: Taylor's Family Foundation
     i18n: company_b
@@ -40,7 +40,7 @@
   job:
     detail: Full Stack Developer Training
     i18n: company_c_job
-  icon: fa-plus-square
+  icon: fa-code
   
 - name:
     detail: Cloud Particle
