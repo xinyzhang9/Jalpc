@@ -87,3 +87,28 @@ function shortestPath(graph, source, target) {
 }
 ```
 The result is called "Degree of Separations". There is a famous theory in social networks that is any two people can be connected through no more than 6 people. This is called "Six Degree of Separations". I think if the data is big, I can use this project to prove that theory.  
+
+## draw animation
+I think the most difficult part of this project is to draw the animation from the start node to the target node following the calculated shortest path.  I spent hours to debug. The bug is the path, for example [1,4,2,3] is not in the right order in the actual graph representation. Finally, I checked the source code using Chrome inspect tool, and wrote a sorting function.  
+
+```
+//sort in order of original arr!     
+selected[0].sort(function(a,b){
+  return d3.ascending(arr.indexOf($scope.obj[a.__data__._id]),arr.indexOf($scope.obj[b.__data__._id]))
+});
+
+After sort, the node representation in the path matches the actual nodes in graph. The drawing code is like this.
+
+selected.transition()        
+  .duration(500)
+  .delay(function(d, i) { return i * 1000; })
+  .style("opacity","1");
+link.transition()
+  .duration(500)
+  .style("opacity", function (o) {
+    return arr.indexOf($scope.obj[o.source._id]) <0  || arr.indexOf($scope.obj[o.target._id]) <0 ? 0.1 : 1;
+  });
+}
+```
+## it is not the end
+Due to other work in my schedule, I just keep the project in beta version. There are many more fun features to be added. I also plan to crawl the real data from social networks website, such as twitter and facebook to build a real, huge neural networks. Thanks for reading!  
