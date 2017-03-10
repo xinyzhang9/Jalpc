@@ -16,10 +16,13 @@ If such arrangement is not possible, it must rearrange it as the lowest possible
 The replacement must be in-place, do not allocate extra memory.  
 
 Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.  
+
+```
 1,2,3 → 1,3,2  
 3,2,1 → 1,2,3  
 1,1,5 → 1,5,1  
- 
+```
+
 ## Solution
 For the detailed algorithm and demonstration, please go to [this article](https://www.nayuki.io/page/next-lexicographical-permutation-algorithm)  
 
@@ -58,3 +61,5 @@ class Solution(object):
             l += 1
             r -= 1
 ```
+## Link to Leetcode discuss board
+[link](https://discuss.leetcode.com/topic/52275/easy-python-solution-based-on-lexicographical-permutation-algorithm)
