@@ -143,4 +143,5 @@ ConnectedNodes is the callback function when the event 'double click' is trigger
 Based on the basic structure, more complicated features such as "Degree of separation" can be implemented using some graph algorithms. It will be introduced in the next post. Thanks for reading!  
 
 ## Link to related blog
+[Part I](https://xinyzhang9.github.io/home/javascript/frontend/backend/2016/08/06/friend-circle.html)  
 [Part III](https://xinyzhang9.github.io/home/javascript/frontend/2016/08/08/friend-circle.html)
