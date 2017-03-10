@@ -44,3 +44,46 @@ function prepareGraph(edges){
 
 ## shortest path
 Based on the graph object, I wrote the function to calculate shortest path between two nodes based on ***breadth-first-search*** algorithms.
+```
+function shortestPath(graph, source, target) {     
+  if (source == target) {   // Delete these four lines if
+    print(source);          // you want to look for a cycle
+  return;                 // when the source is equal to
+  }                         // the target.
+  var queue = [ source ],
+  visited = { source: true },
+  predecessor = {},
+  tail = 0;
+  while (tail < queue.length) {
+    var u = queue[tail++],  // Pop a vertex off the queue.
+    neighbors = graph.neighbors[u];
+    for (var i = 0; i < neighbors.length; ++i) {
+      var v = neighbors[i];
+      if (visited[v]) {
+        continue;
+      }
+      visited[v] = true;
+      if (v === target) {   // Check if the path is complete.
+        var path = [ v ];   // If so, backtrack through the path.
+        while (u !== source) {
+          path.push(u);
+          u = predecessor[u];
+        }
+        path.push(u);
+        path.reverse();
+
+
+        print("The Degree of Separation to the target is "+path.length+'.');
+
+        return path;
+      }
+
+      predecessor[v] = u;
+      queue.push(v);
+    }
+  }
+  print('There is no path to the target');
+  return null;
+}
+```
+The result is called "Degree of Separations". There is a famous theory in social networks that is any two people can be connected through no more than 6 people. This is called "Six Degree of Separations". I think if the data is big, I can use this project to prove that theory.  
