@@ -118,4 +118,5 @@ link.transition()
 ## It is not the end
 Due to other work in my schedule, I just keep the project in beta version. There are many more fun features to be added. I also plan to crawl the real data from social networks website, such as twitter and facebook to build a real, huge neural networks. Thanks for reading!  
 ## Link to related blog
+[Part II](https://github.com/xinyzhang9/home/blob/master/_posts/2016-08-07-friend-circle.md)  
 [Part IV](https://xinyzhang9.github.io/home/javascript/backend/2016/08/09/friend-circle.html)
