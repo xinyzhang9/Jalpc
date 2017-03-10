@@ -43,3 +43,4 @@ function prepareGraph(edges){
 ```
 
 ## shortest path
+Based on the graph object, I wrote the function to calculate shortest path between two nodes based on ***breadth-first-search*** algorithms.
