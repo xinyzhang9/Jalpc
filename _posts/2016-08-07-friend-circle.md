@@ -140,4 +140,7 @@ We also make use of callback functions to change status. For example, in the cod
 
 ConnectedNodes is the callback function when the event 'double click' is triggered.  
 
-Based on the basic structure, more complicated features such as "Degree of separation" can be implemented using some graph algorithms. It will be introduced in the next post. Thanks for reading!
+Based on the basic structure, more complicated features such as "Degree of separation" can be implemented using some graph algorithms. It will be introduced in the next post. Thanks for reading!  
+
+## Link to related blog
+[Part III](https://xinyzhang9.github.io/home/javascript/frontend/2016/08/08/friend-circle.html)
