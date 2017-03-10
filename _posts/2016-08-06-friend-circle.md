@@ -40,11 +40,13 @@ width = '100%'></image>
 ## Architecture
 <image src = 'https://2.bp.blogspot.com/-k6lPdlyJgYo/V6jQzpMcsBI/AAAAAAAAIQo/AN8IX75VBwA2ohKanesvuQPA-r9pAq2NACLcB/s1600/friend-circles.002.jpeg' width = '100%'></image>  
 
+
 * AngularJS is one of the most popular MVC frameworks. I used it to build my front-end with the classical flow. View <=> Controller <=> Factory <=> Routers <=> Backend. I also utilized its built-in validations and filters. For example, a user can only disconnect to another user if they have already connected.  
 * D3.JS is the javascript library which brings data to live using HTML, SVG and CSS. The main function is to draw the real-time networks based on the fetched data from backend. The syntax and programming logic is almost same as the pure javascript. I embedded the code inside my Angular controller. So it can make use of the scope variables and keep updating fluently.  
 * Express is a minimal and flexible NodeJS web framework. It has a lot of APIs and built-in features to make the application easier to build.  
 * NodeJS is the server-side javascript framework. It handles I/O in asynchronized way and it will not block the main flow of the application. The event-driven model is very suitable to handle large quantities of queries at the same time.  
 * MongoDB is one of the most popular Non-SQL databases. It has rich query language and high performance and scalability. In this project, there is no complicated queries so the MongoDB is the best choice.  
+
 
 ## Schema design
 I used the classical graph structure to design the user schema.  
