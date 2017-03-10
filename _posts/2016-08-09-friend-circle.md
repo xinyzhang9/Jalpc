@@ -147,5 +147,5 @@ sudo service nginx reload && sudo service nginx restart
 
 At this point, all the works are done. The project is on live.  
 
-## References
-Notes from AWS Deployment, CodingDojo
+## Link to related blog
+[Part III](https://xinyzhang9.github.io/home/javascript/frontend/2016/08/08/friend-circle.html)
