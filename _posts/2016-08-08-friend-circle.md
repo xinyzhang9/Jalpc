@@ -42,7 +42,7 @@ function prepareGraph(edges){
 }
 ```
 
-## shortest path
+## Shortest path
 Based on the graph object, I wrote the function to calculate shortest path between two nodes based on ***breadth-first-search*** algorithms.
 ```
 function shortestPath(graph, source, target) {     
@@ -88,7 +88,7 @@ function shortestPath(graph, source, target) {
 ```
 The result is called "Degree of Separations". There is a famous theory in social networks that is any two people can be connected through no more than 6 people. This is called "Six Degree of Separations". I think if the data is big, I can use this project to prove that theory.  
 
-## draw animation
+## Draw animation
 I think the most difficult part of this project is to draw the animation from the start node to the target node following the calculated shortest path.  I spent hours to debug. The bug is the path, for example [1,4,2,3] is not in the right order in the actual graph representation. Finally, I checked the source code using Chrome inspect tool, and wrote a sorting function.  
 
 ```
@@ -110,5 +110,7 @@ link.transition()
   });
 }
 ```
-## it is not the end
+## It is not the end
 Due to other work in my schedule, I just keep the project in beta version. There are many more fun features to be added. I also plan to crawl the real data from social networks website, such as twitter and facebook to build a real, huge neural networks. Thanks for reading!  
+## Link to related blog
+[Part IV](https://xinyzhang9.github.io/home/javascript/backend/2016/08/09/friend-circle.html)
