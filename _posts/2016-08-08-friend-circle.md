@@ -9,7 +9,7 @@ tags: [FullStack,algorithm,visualization,graph]
 icon: icon-javascript
 ---
 ## Prepare for the graph structure
-<image src = 'https://4.bp.blogspot.com/-7JdDK_3zMS0/V6jQuKkpS8I/AAAAAAAAIQw/W_wJ5LwHsfUOlmCVTJypBbBh2F8aEKCFACPcB/s640/screenshot4.png' width = '100%'>
+<image src = 'https://4.bp.blogspot.com/-7JdDK_3zMS0/V6jQuKkpS8I/AAAAAAAAIQw/W_wJ5LwHsfUOlmCVTJypBbBh2F8aEKCFACPcB/s1600/screenshot4.png' width = '100%'>
 
 I will implement the degree of separations between two nodes. The simple data structure(node list + edge list) is not capable. We need to build a graph object in order to process the graph algorithms. The graph builder is defined like this:  
 ```
