@@ -96,9 +96,11 @@ I think the most difficult part of this project is to draw the animation from th
 selected[0].sort(function(a,b){
   return d3.ascending(arr.indexOf($scope.obj[a.__data__._id]),arr.indexOf($scope.obj[b.__data__._id]))
 });
+```
 
-After sort, the node representation in the path matches the actual nodes in graph. The drawing code is like this.
+After sort, the node representation in the path matches the actual nodes in graph. The drawing code is like this.  
 
+```
 selected.transition()        
   .duration(500)
   .delay(function(d, i) { return i * 1000; })
