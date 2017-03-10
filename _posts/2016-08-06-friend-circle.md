@@ -46,4 +46,106 @@ width = '100%'></image>
 * MongoDB is one of the most popular Non-SQL databases. It has rich query language and high performance and scalability. In this project, there is no complicated queries so the MongoDB is the best choice.  
 
 ## Schema design
+I used the classical graph structure to design the user schema.  
 
+The NodeSchema saves the information of the user. To make things easier, I use the self-join techniques to make the "friends" attributes, so it can keep track the current user's friends.  
+
+```
+var NodeSchema = new mongoose.Schema({
+  name:String,
+  gender: {type:String, default:"f"},
+  created_at:Date,
+  friends: [{
+    type: mongoose.Schema.Types.ObjectId, ref: 'nodes'
+  }],
+});
+
+```
+The EdgeSchema saves the relationship between users. In this project, there is no actual directions. If two users are connected, there is two-way connection. "source" and "target" just follows the name convention.  
+
+```
+var EdgeSchema = new mongoose.Schema({
+  source : { type: Schema.ObjectId },
+  target : { type: Schema.ObjectId },
+  created_at : Date,
+});
+```
+
+## Server-side controller design
+The server-side controller talks to the database directly and parse data back to front-end. The typical code block is like this:  
+
+```
+module.exports = (function(){
+return{
+         index:function(req,res){
+             Node.find({},function(err,output){
+               if(err){
+                 console.log(err);
+               }else{
+                 res.json(output);
+               }
+             })
+         },
+
+......
+       }
+})()
+```
+
+I used two server-side controllers here. One for node and one for links(edges).  
+
+## Routes design
+I followed the RESTful pattern to design the routes.  For example, :/id represents the node objectId parsed as a parameter.  
+
+```
+app.get('/nodes/:id',function(req,res){
+  nodes.getNodeById(req,res);
+});
+```
+
+## Angular factory design
+The factory serves the communication between backend and front-end controllers. It can also be regarded as the data provider to the front-end. The main ejection to the factory module is the "http" service. It makes a http request to the router and get data back to the controller. A typical code block is like this:  
+
+```
+myApp.factory('nodeFactory',function($http){
+   factory = {};
+   var nodes = [];
+   factory.index = function(callback){
+    console.log('nodeFactory is loading data');
+    $http.get('/nodes').success(function(output){
+     console.log(output);
+     callback(output);
+    })
+   };
+......
+   return factory;
+  });
+```
+
+## Angular controller design
+The controller controls all the data exchange in the html pages. The scope variables are not only used to render corresponding data on the page, they are also used as state indicator. Since the scope variable lives inside the controller, it can be shared by multiple functions in the controller.  
+
+The hardest point in this project is to make sure before the drawing happens, the graph data are ready. After some trials and optimization. I used some callback chains to get the things done. For example, to create connections, there are three steps:  
+* Add user2 to user1's friend list
+* Add user1 to user2's friend list
+* Add links between user1 and user2  
+
+```
+
+$scope.connect = function(id2){
+nodeFactory.connect(id,id2,function(data){
+  nodeFactory.connect(id2,id,function(data){
+    edgeFactory.create(id,id2,function(data){
+      getNode(id);
+      getNodes();
+     // getEdges();
+     // draw();
+    })
+  })
+})
+```
+
+For the key function, that is drawing graph via d3.js, I will create another post to illustrate it. Hope this post gives you the overview of the architecture of this project. Thanks for reading!  
+
+## Link to related blog
+[Part II](https://xinyzhang9.github.io/home/javascript/frontend/2016/08/07/friend-circle.html)
