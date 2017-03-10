@@ -4,7 +4,7 @@ title:  "Lexicographical permutation algorithm"
 date:   2016-07-08
 desc: "Lexicographical permutation algorithm"
 keywords: "python, algorthm, permutation"
-categories: [Python]
+categories: [Python,Algorithms]
 tags: [python, algorthm, permutation]
 icon: icon-python
 ---
