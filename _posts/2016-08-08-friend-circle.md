@@ -8,6 +8,7 @@ categories: [Javascript,Frontend]
 tags: [FullStack,algorithm,visualization,graph]
 icon: icon-javascript
 ---
+
 ## Prepare for the graph structure
 <image src = 'https://4.bp.blogspot.com/-7JdDK_3zMS0/V6jQuKkpS8I/AAAAAAAAIQw/W_wJ5LwHsfUOlmCVTJypBbBh2F8aEKCFACPcB/s1600/screenshot4.png' width = '100%'>
 
@@ -30,8 +31,8 @@ function Graph() {
 ```
 
 And the prepareGraph function is defined like this:  
-```
 
+```
 function prepareGraph(edges){    
   var graph = new Graph();
   for(var i = 0; i < edges.length; i++){
@@ -44,6 +45,7 @@ function prepareGraph(edges){
 
 ## Shortest path
 Based on the graph object, I wrote the function to calculate shortest path between two nodes based on ***breadth-first-search*** algorithms.
+
 ```
 function shortestPath(graph, source, target) {     
   if (source == target) {   // Delete these four lines if
@@ -112,6 +114,7 @@ link.transition()
   });
 }
 ```
+
 ## It is not the end
 Due to other work in my schedule, I just keep the project in beta version. There are many more fun features to be added. I also plan to crawl the real data from social networks website, such as twitter and facebook to build a real, huge neural networks. Thanks for reading!  
 ## Link to related blog
