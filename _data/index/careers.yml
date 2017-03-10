@@ -32,7 +32,7 @@
     detail: CodingDojo
     i18n: company_c
   desc:
-    detail: I am trained as a full stack developer and completed multiple projects in LAMP, MEAN and Ruby on Rails.
+    detail: I am trained as a full stack developer and completed multiple projects in LAMP, MEAN and Ruby on Rails. Then I started my software developer career.
     i18n: company_c_desc
   date:
     detail: Nov. 2015
@@ -52,7 +52,7 @@
     detail: Mar. 2015
     i18n: company_d_date
   job:
-    detail: Hardware engineer intern
+    detail: Hardware Engineer Intern
     i18n: company_d_job
   icon: fa-cloud
   
