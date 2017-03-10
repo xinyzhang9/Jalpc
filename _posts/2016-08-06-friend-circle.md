@@ -18,9 +18,9 @@ Inspired by the neural networks, recently did a project called friend-circles. I
 
 ## Overview
 Index page  
-<image src = 'https://2.bp.blogspot.com/-CyLsDCmpVrc/V6jQq3703oI/AAAAAAAAIQc/rx45UA_WPn4t3f7hl9vLrLL0y0aau6HUgCLcB/s1600/screenshot5.png' width = '100%'><image>  
+<image src = 'https://2.bp.blogspot.com/-CyLsDCmpVrc/V6jQq3703oI/AAAAAAAAIQc/rx45UA_WPn4t3f7hl9vLrLL0y0aau6HUgCLcB/s1600/screenshot5.png' width = '100%'></image>  
 User page  
-<image src = 'https://2.bp.blogspot.com/-yRWBJDIifCA/V6jQuPryfDI/AAAAAAAAIQk/2u3BjkU-9wwq7wLGEa9xX94wq9RKXAW6wCLcB/s1600/screenshot3.png' width = '100%'><image>  
+<image src = 'https://2.bp.blogspot.com/-yRWBJDIifCA/V6jQuPryfDI/AAAAAAAAIQk/2u3BjkU-9wwq7wLGEa9xX94wq9RKXAW6wCLcB/s1600/screenshot3.png' width = '100%'></image>  
 
 On the left side is the control panel, user can select "connect" or "disconnect" on any of other users.
 The middle panel displays the real-time networks of all the users. Each user is represented as a distinct node. Links simply mean they have connections between each other.  
