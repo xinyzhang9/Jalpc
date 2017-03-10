@@ -15,8 +15,9 @@
 - name: Backend
   href: /backend/
 
-- name: Experiments
-  href: /experiments/
+- name: Algorithms
+  href: /algorithms/
+  
 - name: Life
   href: /life/
 
