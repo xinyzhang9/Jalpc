@@ -8,8 +8,20 @@ categories: [Python]
 tags: [python, algorthm, permutation]
 icon: icon-python
 ---
+## Problem
+Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.  
 
-For the detailed algorithm and demonstration, please go to https://www.nayuki.io/page/next-lexicographical-permutation-algorithm
+If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order).  
+
+The replacement must be in-place, do not allocate extra memory.  
+
+Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.  
+1,2,3 → 1,3,2  
+3,2,1 → 1,2,3  
+1,1,5 → 1,5,1  
+ 
+## Solution
+For the detailed algorithm and demonstration, please go to [this article](https://www.nayuki.io/page/next-lexicographical-permutation-algorithm)  
 
 The steps are shown in the picture below.
 ![alt text](https://www.nayuki.io/res/next-lexicographical-permutation-algorithm/next-permutation-algorithm.png)
