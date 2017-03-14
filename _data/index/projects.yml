@@ -89,6 +89,6 @@
   i18n: Flyflower Game
   gh_user: xinyzhang9
   repo: flyflower
-  img: /static/assets/img/landing/movie.jpeg
+  img: /static/assets/img/landing/flower.png
   desc: This is the Chinese-word game. Two players take turns to speak out a verse which contains a special character and see who fails to do that.
 
