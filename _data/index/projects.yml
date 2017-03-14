@@ -1,6 +1,20 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Personal website
+  i18n: Personal website
+  gh_user: xinyzhang9
+  repo: home
+  img: /static/assets/img/landing/movie.jpeg
+  desc: This is the personal website built using Jalpc. I improved it by adding some UI components to make it fully customized.
+  
+- name: Flyflower Game(飞花令)
+  i18n: Flyflower Game
+  gh_user: xinyzhang9
+  repo: flyflower
+  img: /static/assets/img/landing/movie.jpeg
+  desc: This is the Chinese-word game. Two players take turns to speak out a verse which contains a special character and see who fails to do that.
+
 - name: Movie Recommender
   i18n: Movie Recommender
   gh_user: xinyzhang9
