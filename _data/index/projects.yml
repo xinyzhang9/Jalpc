@@ -7,6 +7,7 @@
   repo: movie_recommender
   img: /static/assets/img/landing/movie.jpeg
   desc: This is a movie recommender application using RxJS. I create 3 streams to fetch movie data from API endpoints and each stream is considered as distinct. So the user can remove a single suggestion and it will be replaced by a new suggestion.
+  url: https://xinyzhang9.github.io/movie_recommender/
 
 - name: Clash Royale Deck Advisor
   i18n: Clash Royale Deck Advisor
@@ -14,6 +15,7 @@
   repo: ClashRoyaleDeck
   img: /static/assets/img/landing/clash.png
   desc: This is a single-page application using React+Redux+Webpack -- a deck advisor for Clash Royale players. User can build their own deck from the most updated cards. the advisor will show some useful statistics and suggestions on how to improve this deck.
+  url: https://xinyzhang9.github.io/ClashRoyaleDeck/
 
 - name: Pokemon Fighting Game
   i18n: Pokemon Fighting Game
@@ -21,27 +23,31 @@
   repo: socket_io
   img: /static/assets/img/landing/pokemon.png
   desc: This is the round based fighting game implemented by socket.io. User can have a PvP or PvE battle via the pokemons. The game engine is the game theory of rock-scissor-paper. The pokemon can release supermoves if its moves are not overtaken by the opponents for certain rounds.
-
+  url: http://162.243.159.24/
+  
 - name: JianQi 2D Game
   i18n: JianQi 2D Game
   gh_user: xinyzhang9
   repo: JianQi_Game
   img: /static/assets/img/landing/jianqi.png
   desc: This is a 2D endless mode arcade game implemented by Laya Engine. You are a hero who keeps fighting various fo monsters. During game process, you can get items to power up your health and skills. To get higher score, you need to beat as many enemies as you could. But at first, make sure you can survive.
-
+  url: https://xinyzhang9.github.io/jianqi/bin/index.html
+  
 - name: Friend Circles
   i18n: Friend Circles
   gh_user: xinyzhang9
   repo: friend-circles
   img: /static/assets/img/landing/friends.png
   desc: This is a visualization of the real-time friend circles. This app is implemented in MEAN stack and deployed with NGINX.
-
+  url: http://104.236.188.141/#/
+  
 - name: Fighter Trainer
   i18n: Fighter Trainer
   gh_user: xinyzhang9
   repo: fighter_trainer
   img: /static/assets/img/landing/sf.png
   desc: This is a similation of Macbook keyboard using RxJS and CSS3. It can be used as a trainer for street fighter players. 
+  url: https://xinyzhang9.github.io/fighter_trainer/
   
 - name: Hover Zoom
   i18n: Hover Zoom
@@ -49,6 +55,7 @@
   repo: rx_zoom
   img: /static/assets/img/landing/zoom.png
   desc: This is a demo project to show how to hover and zoom images using RxJS.
+  url: https://xinyzhang9.github.io/rx_zoom/
   
 - name: Session Timer
   i18n: Session Timer
@@ -56,6 +63,7 @@
   repo: Session_Timer
   img: /static/assets/img/landing/timer.png
   desc: It is a RxJS application for automatically logging off a user session.
+  url: https://xinyzhang9.github.io/Session_Timer/
   
 - name: Alexa Projects
   i18n: Alexa Projects
@@ -63,6 +71,7 @@
   repo: alexa_projects
   img: /static/assets/img/landing/alexa.png
   desc: This is a project collection for Amazon Alexa applications.
+  url: https://github.com/xinyzhang9/alexa_projects
   
 - name: Builder Game
   i18n: Builder Game
@@ -70,6 +79,7 @@
   repo: builder_game
   img: /static/assets/img/landing/builder.png
   desc: This is a 3D builder game using three.js.
+  url: https://xinyzhang9.github.io/builder/index.html
 
 - name: Secret Chatroom
   i18n: Secret Chatroom
@@ -77,6 +87,7 @@
   repo: rxjs_chatroom
   img: /static/assets/img/landing/chatroom.png
   desc: This is a chatroom application implemented by Rxjs, Socket IO, ReactJS, Webpack and NodeJS.
+  url: http://162.243.134.189/
   
 - name: Particle Effect with finger
   i18n: Particle Effect with finger
@@ -84,6 +95,7 @@
   repo: xinyzhang9.github.io/tree/master/dancing_ice
   img: /static/assets/img/landing/finger.png
   desc: This is a WebGL experiments for users to interact screen with fingers to generate fancy effects.
+  url: https://xinyzhang9.github.io/colorful_ice/index.html
 
 - name: Flyflower Game(飞花令)
   i18n: Flyflower Game
@@ -91,4 +103,5 @@
   repo: flyflower
   img: /static/assets/img/landing/flower.png
   desc: This is the Chinese-word game. Two players take turns to speak out a verse which contains a special character and see who fails to do that.
+  url: https://xinyzhang9.github.io/flyflower/
 
