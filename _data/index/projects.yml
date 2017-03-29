@@ -104,4 +104,12 @@
   img: /static/assets/img/landing/flower.png
   desc: This is the Chinese-word game. Two players take turns to speak out a verse which contains a special character and see who fails to do that.
   url: https://xinyzhang9.github.io/flyflower/
+  
+- name: Parallax Slider Gallery
+  i18n: Parallax Slider Gallery
+  gh_user: xinyzhang9
+  repo: kangkang_trip
+  img: /static/assets/img/landing/flower.png
+  desc: This is a parrallax slider gallery using JQuery, which collects some of the best memories for my sweetheart.
+  url: https://xinyzhang9.github.io/kangkang_trip/
 
