@@ -117,7 +117,7 @@
   i18n: Spin Game
   gh_user: xinyzhang9
   repo: spin_game
-  img: /static/assets/img/landing/Screenshot_20170606-164426.png
+  img: /static/assets/img/landing/spin.png
   desc: This is a spin game, to celebrate the 100th days with my girlfriend.
   url: https://xinyzhang9.github.io/spin_game/
 
