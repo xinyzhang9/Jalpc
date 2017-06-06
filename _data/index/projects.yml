@@ -112,4 +112,12 @@
   img: /static/assets/img/landing/gallery.png
   desc: This is a parrallax slider gallery using JQuery, which collects some of the best memories for the trip of my girl in US.
   url: https://xinyzhang9.github.io/kangkang_trip/
+  
+- name: Spin Game
+  i18n: Spin Game
+  gh_user: xinyzhang9
+  repo: spin_game
+  img: /static/assets/img/landing/gallery.png
+  desc: This is a spin game, to celebrate the 100th days with my girlfriend.
+  url: https://xinyzhang9.github.io/spin_game/
 
