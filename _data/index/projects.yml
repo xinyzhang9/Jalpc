@@ -121,3 +121,10 @@
   desc: This is a spin game, to celebrate the 100th days with my girlfriend.
   url: https://xinyzhang9.github.io/spin_game/
 
+- name: Player Card
+  i18n: Player Card
+  gh_user: xinyzhang9
+  repo: vue_card
+  img: /static/assets/img/landing/soccer.png
+  desc: This is a spin game, to celebrate the 100th days with my girlfriend.
+  url: https://xinyzhang9.github.io/spin_game/
