@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: JavaScript, Python, HTML5, NodeJS, VueJS, ReactJS, PHP, MongoDB, AWS, Git, Java, Linux/Shell
-percentage: 90, 80, 85, 70, 75, 80, 65, 70, 65, 80, 70, 65
+aspects: JavaScript, JAVA, Python, HTML5, NodeJS, VueJS, ReactJS, MongoDB, AWS, Git, Java, Linux/Shell
+percentage: 90, 75, 80, 85, 70, 75, 80, 70, 65, 80, 70, 65
