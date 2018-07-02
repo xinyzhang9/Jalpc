@@ -12,7 +12,7 @@
   job:
     detail: Full Stack Developer
     i18n: company_a_job
-  icon: fa-bar-chart
+  icon: fa-clone
   
 - name:
     detail: Daric.Inc
